@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ATM {
     public static void main(String[] args) {
-        int balance = 1;
+        int balance = 0;
 
         while (true) {
             Scanner cashscan = new Scanner(System.in);
