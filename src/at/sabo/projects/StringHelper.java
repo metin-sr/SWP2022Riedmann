@@ -95,17 +95,31 @@ public class StringHelper {
         System.out.println("Welches Wort wollen Sie umdrehen?");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        String inputText = "";
+        String reverseText = "";
 
         for (int i = input.length() - 1; i >= 0; i--) {
-            inputText += input.charAt(i); // charAt(i) =gibt einen Wert vom Datentyp zurück, indemfall von i bzw. von der Länge von Random.
+            reverseText += input.charAt(i); // charAt(i) =gibt einen Wert vom Datentyp zurück, indemfall von i bzw. von der Länge von Random.
 
         }
+        System.out.println("reverseText: " + reverseText);
 
 
 
     }
     public static void getAmountOfLetters(){
+        System.out.println("Wollen sie die Anzahl der Buchstaben zählen?");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+
+        int output = 0;
+        char [] counter = input.toCharArray();
+        for (int i = 0; i < counter.length; i++) {
+            output = i + 1;
+
+
+
+        }
+        System.out.println(output);
 
 
 
